@@ -13,7 +13,7 @@ const USE_AUTHENTICATION = false;
 
 (async function setupDB() {
     const client = await setup()
-    userFacade.setDatabase(client)
+    await userFacade.setDatabase(client)
 })()
 
 
